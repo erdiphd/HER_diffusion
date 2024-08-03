@@ -15,7 +15,6 @@ from mpl_toolkits.mplot3d import Axes3D
 
 def plot2d(path, start, end, step=1):
     for i in range(start,end,step):
-        # observation = np.load("/media/erdi/erdihome_hdd/Codes/outpace/outpace_analyses/results_analyse/saved_log/trajectory/59400.npy")
         observation = np.load(path + "/test_obs" + str(i)+".npy")
         intermediate_goals = np.load(path + "/env_goals" + str(i) + ".npy", allow_pickle=True)
 
@@ -89,6 +88,6 @@ def video_generator():
 # video_generator()
 
 
-path = "/media/erdi/erdihome_hdd/Codes/outpace/outpace_analyses/hgg_analysis/tmp/"
+path = "/media/Codes/outpace/outpace_analyses/hgg_analysis/tmp/"
 plot2d(path,1,85)
 # video_generator()

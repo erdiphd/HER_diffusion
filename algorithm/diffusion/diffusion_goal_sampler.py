@@ -175,7 +175,6 @@ class DiffusionGoalSampler:
 
 
 if __name__ == "__main__":
-    print("erdi_Test")
     max_action = [0.7, 1.0, 0.5]
     min_action = [-0.7, 0.2, 0]
     device = "cuda:0"

@@ -7,12 +7,12 @@ from mujoco_py.generated.const import GEOM_SPHERE
 import glob
 from matplotlib import cm
 
-model = load_model_from_path("/home/erdi/Desktop/Storage/Projects/Hindsight-Goal-Generation/gym/gym/envs/robotics/assets/fetch/push.xml")
+model = load_model_from_path("/home/gym/gym/envs/robotics/assets/fetch/push.xml")
 sim = MjSim(model)
 viewer = MjViewer(sim)
 index = 500_000
 
-path = "/media/erdi/erdihome_hdd/Codes/outpace/outpace_analyses/hgg_analysis/far_away_from_me/log"
+path = "/media/Codes/outpace/outpace_analyses/hgg_analysis/far_away_from_me/log"
 index_number = 17
 
 intermediate_goals_total = []

@@ -67,15 +67,13 @@ def plot_evaluation_graph(path,color="red"):
 
 
 
-# path = "/media/erdi/erdihome_hdd/Codes/outpace/meetings/temporary_files_for_meeting/HGG_orginal/Pickandplace_goal_air/Hindsight-Goal-Generation/log/text/"
 
-# x_data, y_data = plot_evaluation_graph(path, 'blue')
 
-path = "/media/erdi/xraydisk/cilocharching_machines/next_to_me/log/accs/ddpg-FetchPickAndPlace-v1-hgg-(2023-11-24-18:13:51)/"
+path = "/media/"
 
 x_data, y_data = plot_evaluation_graph(path, 'red')
 
-path = "/media/erdi/xraydisk/temporary_files_container/HGG_Diffusion/log/text/"
+path = "/media/"
 
 x_data, y_data = plot_evaluation_graph(path, 'green')
 

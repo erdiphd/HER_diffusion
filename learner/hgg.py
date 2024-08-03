@@ -72,7 +72,7 @@ class MatchSampler:
 			# return self.add_noise(self.pool[idx])
 			return self.pool[idx]
 		else:
-			return self.pool[idx].copy()#erdi_test
+			return self.pool[idx].copy()
 
 	def find(self, goal):
 		res = np.sqrt(np.sum(np.square(self.pool-goal),axis=1))
@@ -148,7 +148,7 @@ class MatchSampler:
 		assert len(explore_goals)==self.length
 		self.pool = np.array(explore_goals)
 
-class HGGLearner:
+class DiffusionLearner:
 	def __init__(self, args):
 		self.args = args
 		self.env = make_env(args)

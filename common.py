@@ -16,7 +16,7 @@ def get_args():
 
 	parser.add_argument('--tag', help='terminal tag in logger', type=str, default='')
 	parser.add_argument('--alg', help='backend algorithm', type=str, default='ddpg', choices=['ddpg', 'ddpg2'])
-	parser.add_argument('--learn', help='type of training method', type=str, default='hgg', choices=learner_collection.keys())
+	parser.add_argument('--learn', help='type of training method', type=str, default='diffusion', choices=learner_collection.keys())
 
 	parser.add_argument('--env', help='gym env id', type=str, default='FetchPush-v1', choices=Robotics_envs_id)
 	args, _ = parser.parse_known_args()

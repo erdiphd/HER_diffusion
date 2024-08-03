@@ -4,9 +4,9 @@ import torch
 if __name__=='__main__':
 	args = get_args()
 	env, env_test, agent, buffer, learner, tester, diffusion_model, aim_discriminator = experiment_setup(args)
-	agent.pi.load_state_dict(torch.load('/media/erdi/xraydisk/cilocharching_machines/next_to_me/log/policy66.pth'))
-	agent.obs_normalizer.mean = torch.load('/media/erdi/xraydisk/cilocharching_machines/next_to_me/log/mean66.pth')
-	agent.obs_normalizer.std = torch.load('/media/erdi/xraydisk/cilocharching_machines/next_to_me/log/std66.pth')
+	agent.pi.load_state_dict(torch.load('/media/xraydisk/cilocharching_machines/next_to_me/log/policy66.pth'))
+	agent.obs_normalizer.mean = torch.load('/media/xraydisk/cilocharching_machines/next_to_me/log/mean66.pth')
+	agent.obs_normalizer.std = torch.load('/media/xraydisk/cilocharching_machines/next_to_me/log/std66.pth')
 	test_rollouts = 10
 	acc_sum, obs = 0.0, []
 	for i in range(test_rollouts):

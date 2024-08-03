@@ -219,7 +219,7 @@ if __name__ == "__main__":
     x_dim = 6
     env_name = 'sawyer_reach'
     tmp = DiscriminatorEnsemble(n_ensemble=n_ensemble,x_dim=x_dim,env_name=env_name)
-    obs = torch.load("/home/erdi/Desktop/Storage/Projects/silinecek/test.pt")
+    obs = torch.load("/home/Desktop/Storage/Projects/silinecek/test.pt")
     tmp.optimize_discriminator(obs,obs,obs)
     tmp.reward(obs)
 
