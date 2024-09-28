@@ -1,9 +1,10 @@
 from .normal import NormalLearner
-from .hgg import DiffusionLearner
-
+from .diffusion import DiffusionLearner
+from .hgg import HGGLearner
 learner_collection = {
 	'normal': NormalLearner,
 	'diffusion': DiffusionLearner,
+	'hgg': HGGLearner,
 }
 
 def create_learner(args):
